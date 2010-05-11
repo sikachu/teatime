@@ -1,2 +1,4 @@
-<h1>Public#show</h1>
-<p>Find me in app/views/public/show.html.erb</p>
+<% content_for :javascript do %>
+  <%= javascript_tag "var remaining = #{@amount};" %>
+<% end %>
+<h1 id="remaining"></h1>
